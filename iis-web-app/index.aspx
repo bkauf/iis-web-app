@@ -21,7 +21,7 @@
 				<h2> From Container <%=System.Environment.MachineName %></h2>
 			</div>
 			<div id="header-right">
-					<img src="msft.jpg", width="200px">
+					<img src="msft-docker.png", width="200px">
 			</div>
 		  
 		 
