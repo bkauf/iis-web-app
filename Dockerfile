@@ -13,9 +13,9 @@ RUN Remove-Website 'Default Web Site';
 # Set up website: iis-web-app
 RUN New-Item -Path 'C:\Apps\iis-web-app' -Type Directory -Force; 
 
-RUN New-Website -Name 'iis-web-app' -PhysicalPath 'C:\Apps\iis-web-app' -Port 82 -Force; 
+RUN New-Website -Name 'iis-web-app' -PhysicalPath 'C:\Apps\iis-web-app' -Port 80 -Force; 
 
-EXPOSE 82
+EXPOSE 80
 
 COPY ["iis-web-app", "/Apps/iis-web-app"]
 

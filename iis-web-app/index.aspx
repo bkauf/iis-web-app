@@ -5,21 +5,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>IIS-Web-APP</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-        
+    <!--<form id="form1" runat="server">-->
+   <!--<div></div>-->
+    <!--</form>-->
+	
+	
+	<div id="wrapper">
+	
+		<div id="header">
+			<div id="header-left">
+				<h1>IIS ASP.Net Windows Container</h1>
+				<h2> From Container <%=System.Environment.MachineName %></h2>
+			</div>
+			<div id="header-right">
+					<img src="msft.jpg", width="200px">
+			</div>
+		  
+		 
+		</div>
+		<div id="main>
 		Today is <%=DateTime.Now.ToString() %>
 		<%=System.Web.Hosting.HostingEnvironment.SiteName %>
-		<%=System.Environment.MachineName %>
-		
-		
-		
-		
 		</div>
-    </form>
-	<div>
+	
+	
+	</div>
+     
+	
 </body>
 </html>
